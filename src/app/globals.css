@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+
+  /* MHDC brand palette (from mhdc.co.id) */
+  --color-navy-950: #0d1638;
+  --color-navy-900: #121e4a;
+  --color-navy-800: #19285e;
+  --color-navy-700: #253a7f;
+  --color-navy-600: #34509f;
+  --color-navy-100: #e3e8f5;
+  --color-navy-50: #f1f4fa;
+
+  --color-gold-700: #6f5527;
+  --color-gold-600: #8c6d3a;
+  --color-gold-500: #b08d57;
+  --color-gold-400: #c9a96e;
+  --color-gold-300: #dcc497;
+  --color-gold-100: #f4ecdc;
+  --color-gold-50: #fbf8f1;
+
+  --color-brown-800: #57370d;
+  --color-khaki: #9f9674;
+  --color-brand-red: #eb1c1a;
+  --color-teal-brand: #0f695c;
+  --color-ink: #2b2c28;
+  --color-surface: #f4f5f2;
+}
+
+html,
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #cfd3dc;
+  border-radius: 9999px;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #dcc497 0%, #b08d57 50%, #8c6d3a 100%);
+}
+.navy-gradient {
+  background: linear-gradient(160deg, #19285e 0%, #121e4a 60%, #0d1638 100%);
+}
